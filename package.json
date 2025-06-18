@@ -1,6 +1,6 @@
 {
-  "name": "singleton",
-  "version": "1.0.1",
+  "name": "@aladas-org/singleton",
+  "version": "1.0.2",
   "description": "Singleton design pattern for Javascript",
   "keywords": [
     "singleton",
