@@ -1,0 +1,31 @@
+---------- How to convert a CJS JavaScript module to UMD/ES6 ----------
+
+1. Install Rollup and plugins
+> npm install --save-dev rollup @rollup/plugin-commonjs @rollup/plugin-node-resolve rollup-plugin-terser
+
+2. Create rollup.config.jsn with the following content
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+
+export default [
+  {
+    input: 'src/singleton.js',
+    output: [
+      {
+        file: 'dist/singleton.esm.js',
+        format: 'esm', // ES6 module
+      },
+      {
+        file: 'dist/singleton.umd.js',
+        format: 'umd', // UMD module
+        name: 'Singleton',
+      }
+    ],
+    plugins: [resolve(), commonjs()]
+  }
+];
+
+3. CommonJS (CJS) input: src/singleton.js
+
+4. Run Rollup: 
+> npx rollup -c
