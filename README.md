@@ -1,4 +1,4 @@
-## Singleton 1.0.3
+## Singleton 1.0.4
 
 1. Purpose  
    `Singleton` is an implementation of the _Singleton Design pattern_

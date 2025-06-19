@@ -1,6 +1,6 @@
 {
   "name": "@aladas-org/singleton",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Singleton design pattern for Javascript",
   "keywords": [
     "singleton",
@@ -16,7 +16,7 @@
   },
   "license": "BSD-3-Clause",
   "author": "Michel Kern and Daniel Rodet",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "directories": {
     "doc": "doc"
